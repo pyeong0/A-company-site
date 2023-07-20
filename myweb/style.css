@@ -1,0 +1,123 @@
+html{
+    font-size: 100%;
+}
+body{
+    color: #555;
+    font-family: sans-serif;
+}
+
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.main-nav{
+    display: flex;
+
+}
+.logo{
+    width:12.5rem;
+}
+.main-nav a{
+    display: block;
+    padding: .5rem;
+    width:4rem;
+}
+.main-nav a::before {
+    display: block;
+    margin-bottom: .25rem;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    color: #555;
+    font-size: 1.25rem;
+} 
+.main-nav li{
+    text-align: center;
+    font-size: .75rem;
+}
+
+.wrapper{
+    max-width: 1200px;
+    width:94%;
+    margin:6.25rem auto;
+    padding: 3rem 2rem;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+}
+
+.btn{
+    font-family: 'Noto Serif KR', serif;
+    display: inline;
+    padding: 1.25rem 3.25rem;
+    font-size: 1.375rem;
+    text-align: center;
+    width: 100%;
+}
+.btn-primary{
+    color:#fff;
+    background:rgb(82, 51, 51)
+}
+.btn-primary:hover{
+    background:#3a7edf;
+}
+.btn-secondary{
+    color: #555;
+    background:#d0bea2;
+}
+.btn-secondary:hover{
+    background:#d9cebe;
+}
+
+.title{
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    line-height:1.5;
+}
+.title::after{
+    content: '';
+    display: block;
+    height:5px;
+    width:10rem;
+    background:#d0bea2;
+    margin:2rem auto;
+}
+.title-center {
+    text-align:center;
+}
+.title-center::after {
+    margin:2.5rem auto;
+}
+
+.home-hero{
+    background: url('../images/3.jpg') no-repeat right top / 70vw auto;
+    padding: 5.5rem 1rem 3rem;
+}
+
+.brown-bg {
+    background: #f8f6f2;
+}
+.content {
+    padding: 4rem 1rem;
+}
+.home-text {
+    margin-bottom: 2rem;
+}
+
+
+
+footer {
+    background: grey;
+    color: rgba(255,255,255,.8);
+    padding: 3.5rem 1rem;
+    text-align:center;
+}
+footer .btn {
+    margin-bottom:3.5rem;
+}
+.footer-nav li {
+    margin:1rem 0;
+}
+.footer-nav a {
+    color:#d5d7e4;
+}
