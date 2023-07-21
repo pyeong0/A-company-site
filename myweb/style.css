@@ -5,7 +5,9 @@ body{
     color: #555;
     font-family: sans-serif;
 }
-
+p{
+    line-height: 1.7;
+}
 header .wrapper{
     display: flex;
     justify-content: space-between;
@@ -22,7 +24,7 @@ header .wrapper{
 .main-nav a{
     display: block;
     padding: .5rem;
-    width:4rem;
+    width:auto;;
 }
 .main-nav a::before {
     display: block;
@@ -32,9 +34,18 @@ header .wrapper{
     color: #555;
     font-size: 1.25rem;
 } 
+.main-nav a:hover,
+.main-nav .current {
+    border-bottom: 2px solid #2d3374;
+    padding-bottom: .5rem;
+    background: none;
+}
 .main-nav li{
     text-align: center;
     font-size: .75rem;
+    margin-left: 2rem;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.25rem;
 }
 
 .wrapper{
@@ -91,7 +102,7 @@ header .wrapper{
 
 .home-hero{
     background: url('../images/3.jpg') no-repeat right top / 70vw auto;
-    padding: 5.5rem 1rem 3rem;
+    padding: 16vw 1rem;;
 }
 
 .brown-bg {
@@ -112,12 +123,22 @@ footer {
     padding: 3.5rem 1rem;
     text-align:center;
 }
+.footer-nav {
+    display: flex;
+    justify-content: center;
+}
 footer .btn {
     margin-bottom:3.5rem;
 }
 .footer-nav li {
-    margin:1rem 0;
+    margin: 0 .75rem;
 }
 .footer-nav a {
     color:#d5d7e4;
 }
+.footer-nav a:hover {
+    color: #fff;
+}
+
+
+
