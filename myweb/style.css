@@ -1,3 +1,4 @@
+/* general style */
 html{
     font-size: 100%;
 }
@@ -5,58 +6,21 @@ body{
     color: #555;
     font-family: sans-serif;
 }
+
+/* common */
 p{
     line-height: 1.7;
 }
-header .wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
-.main-nav{
-    display: flex;
 
-}
-.logo{
-    width:12.5rem;
-}
-.main-nav a{
-    display: block;
-    padding: .5rem;
-    width:auto;;
-}
-.main-nav a::before {
-    display: block;
-    margin-bottom: .25rem;
-    font-family: 'Font Awesome 5 Pro';
-    font-weight: 900;
-    color: #555;
-    font-size: 1.25rem;
-} 
-.main-nav a:hover,
-.main-nav .current {
-    border-bottom: 2px solid #2d3374;
-    padding-bottom: .5rem;
-    background: none;
-}
-.main-nav li{
-    text-align: center;
-    font-size: .75rem;
-    margin-left: 2rem;
-    font-family: 'Noto Serif KR', serif;
-    font-size: 1.25rem;
-}
-
+/* layout */
 .wrapper{
     max-width: 1200px;
-    width:94%;
-    margin:6.25rem auto;
-    padding: 3rem 2rem;
-    background: #fff;
-    box-shadow: 0 0 6px rgba(0,0,0,.2);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
+/* btn */
 .btn{
     font-family: 'Noto Serif KR', serif;
     display: inline;
@@ -80,6 +44,7 @@ header .wrapper{
     background:#d9cebe;
 }
 
+/* heading */
 .title{
     font-family: 'Georgia', serif;
     font-size: 1.5rem;
@@ -100,11 +65,55 @@ header .wrapper{
     margin:2.5rem auto;
 }
 
+/* header */
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin:auto;
+}
+.main-nav{
+    display: flex;
+}
+.main-nav li{
+    text-align: center;
+    font-size: .75rem;
+    margin-left: 2rem;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.25rem;
+}
+.logo{
+    width:2rem;
+}
+.main-nav a{
+    display: block;
+    padding: .5rem;
+    width:auto;;
+}
+.main-nav a::before {
+    display: block;
+    margin-bottom: .25rem;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    color: #555;
+    font-size: 1.25rem;
+} 
+.main-nav a:hover,
+.main-nav .current {
+    border-bottom: 2px solid #2d3374;
+    padding-bottom: .5rem;
+    background: none;
+}
+
+/* home */
 .home-hero{
     background: url('https://velog.velcdn.com/images/w4t3r/post/a578c89b-98de-4b7a-89dd-eb28474f4fec/image.jpg') no-repeat right top / 70vw auto;
     padding: 16vw 1rem;;
+    margin: auto;
 }
 
+/* contents */
 .brown-bg {
     background: #f8f6f2;
 }
@@ -115,8 +124,7 @@ header .wrapper{
     margin-bottom: 2rem;
 }
 
-
-
+/* footer */
 footer {
     background: grey;
     color: rgba(255,255,255,.8);
@@ -139,6 +147,7 @@ footer .btn {
 .footer-nav a:hover {
     color: #fff;
 }
+
 
 
 
