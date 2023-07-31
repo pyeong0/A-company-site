@@ -150,6 +150,34 @@ footer .btn {
     color:#d5d7e4;
 }
 
+/* 그래프 글씨 */
+.ct-label {
+    font-size: 1rem;
+    fill: #fff;
+}
+
+/* 원 그래프 */
+.ct-series-a .ct-slice-pie {
+    fill: burlywood;
+}
+.ct-series-b .ct-slice-pie {
+    fill: rgb(245, 215, 160); 
+}
+.ct-series-c .ct-slice-pie {
+    fill: rgb(226, 172, 36);
+}
+.ct-series-d .ct-slice-pie {
+    fill: rgb(243, 177, 97);
+}
+
+/* 막대 그래프 */
+.ct-series-a .ct-bar {
+    stroke: tan;
+}
+.ct-bar {
+    stroke-width: 16%;
+}
+
 
 
 @media (min-width: 600px) {
