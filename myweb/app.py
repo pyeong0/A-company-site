@@ -3,15 +3,15 @@ import pymysql
 
 app = Flask(__name__)
 
-import os
-
-db_config = {
-    'host': os.getenv('DB_HOST', 'localhost'),
-    'port': int(os.getenv('DB_PORT', 3306)),
-    'user': os.getenv('DB_USER', 'root'),
-    'password': os.getenv('DB_PASSWORD', '53955395'),
-    'database': os.getenv('DB_DATABASE', 'myweb')
-}
+# import os
+# 
+# db_config = {
+    # 'host': os.getenv('DB_HOST', 'localhost'),
+    # 'port': int(os.getenv('DB_PORT', 3306)),
+    # 'user': os.getenv('DB_USER', 'root'),
+    # 'password': os.getenv('DB_PASSWORD', '53955395'),
+    # 'database': os.getenv('DB_DATABASE', 'myweb')
+# }
 
 # 연결 함수
 def get_db():
@@ -45,7 +45,7 @@ def apply():
 
  # 변경사항 커밋
  connection.commit()
- 
+
  # 커서 및 연결 닫기
  cursor.close()
  connection.close()
