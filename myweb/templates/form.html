@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>IT Company</title>
+    <meta name="description"content="IT Company"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet"/>
+    {# <link href="static/style.css" rel="stylesheet" /> #}
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b8a7fea4d4.js"></script>
+  </head>
+
+  <body class="page-form">
+    <header>
+      <div class="wrapper">
+        <h1>
+          <a href="index.html">
+            <img class="logo"src="https://velog.velcdn.com/images/w4t3r/post/9ec5752f-8af2-41ea-82dc-40efc72ee845/image.png" alt="IT Company"/>
+          </a>
+        </h1>
+        <nav>
+          <ul class="main-nav">
+            <li><a class="menu-home" href="/">홈</a></li>
+            <li><a class="menu-job" href="/">채용공고</a></li>
+            <li><a class="current menu-form" href="form">입사지원</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="title title-center">입사지원</h2>
+      <p>하기 내용을 입력한 후 지원하기 버튼을 눌러주세요.</p>
+      <p class="text-small">
+      </p>
+      <form action="/apply" method="post">
+        <table>
+          <tr>
+            <th>성명</th>
+            <td><input type="text"name="Name" placeholder="예：홍길동" /></td>
+          </tr>
+          <tr>
+            <th>전화번호</th>
+            <td><input type="text"name="Hp" placeholder="예：010-1234-5678" /></td>
+          </tr>
+          <tr>
+            <th>메일주소</th>
+            <td><input type="email"name="Mail_address" placeholder="예：gildong@naver.com" /></td>
+          </tr>
+          <tr>
+            <th>포트폴리오 url</th>
+            <td>
+              <input type="url"name="Portfolio_url" placeholder="예：http://portfolio.com" />
+            </td>                    
+          </tr>
+          <tr>
+            <th>사는곳</th>
+            <td>
+              <div class="select-box">
+                <select name="Residence">
+                  <option value="서울">서울</option>
+                  <option value="인천">인천</option>
+                  <option value="경기도">경기도</option>
+                  <option value="부산">부산</option>
+                  <option value="대구">대구</option>
+                  <option value="울산">울산</option>
+                  <option value="광주">광주</option>
+                  <option value="대전">대전</option>
+                  <option value="강원도">강원도</option>
+                  <option value="충청남도">충청남도</option>
+                  <option value="충청북도">충청북도</option>
+                  <option value="전라남도">전라남도</option>
+                  <option value="전라북도">전라북도</option>
+                  <option value="경상남도">경상남도</option>
+                  <option value="경상북도">경상북도</option>
+                  <option value="세종시">세종시</option>
+                  <option value="제주도">제주도</option>
+                  <option value="해외">해외</option>
+                </select>
+              </div>
+            </td>
+            </tr>
+          <tr>
+            <th>자기소개</th>
+            <td>
+              <textarea name="Introduce" placeholder="예：전공, 지금까지 준비한것, 완성된 프로젝트 등"></textarea>
+            </td>
+          </tr>
+        </table>
+        <p class="text-center">
+          <input type="submit" class="btn btn-primary" value="지원하기"/>
+        </p>
+      </form>
+    </main>
+
+    <footer>
+      <ul class="footer-nav">
+        <li><a href="#">회사개요</a></li>
+        <li><a href="#">서비스</a></li>
+        <li><a href="#">오시는길</a></li>
+        <li><a href="#">문의사항</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
+
+

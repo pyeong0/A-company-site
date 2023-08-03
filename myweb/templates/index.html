@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
-    <link rel="stylesheet" href="style.css" />
+    {# <link href="static/style.css" rel="stylesheet" /> #}
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
   </head>
   <body>
@@ -22,9 +23,9 @@
         </h1>
         <nav>
           <ul class="main-nav">
-            <li><a class="current menu-home" href="index.html"></a></li>
-            <li><a class="menu-job" href="job.html"></a></li>
-            <li><a class="menu-form" href="form.html"></a></li>
+            <li><a class="current menu-home" href="/"></a></li>
+            <li><a class="menu-job" href="/"></a></li>
+            <li><a class="menu-form" href="form"></a></li>
           </ul>
         </nav>
       </div>
@@ -33,7 +34,7 @@
 
     <section class="home-hero wrapper">
       <h2></h2>
-      <a href="job.html" class="btn btn-primary">모집요강 확인</a>
+      <a href="job.html" class="btn btn-primary">채용공고 확인</a>
     </section>
 
     <section class="brown-bg">
@@ -60,7 +61,7 @@
     </section>
 
     <footer>
-      <a href="job.html" class="btn btn-secondary">모집요강 확인</a>
+      <a href="job.html" class="btn btn-secondary">채용공고 확인</a>
       <ul class="footer-nav">
         <li><a href="#"></a></li>
         <li><a href="#"></a></li>
@@ -73,7 +74,7 @@
       //main-nav
       let mainNav = document.getElementsByClassName("main-nav")[0];
       let mainListItems = mainNav.getElementsByTagName("li");
-      let mainNewTitle = ["홈", "모집요강", "지원"];
+      let mainNewTitle = ["홈", "채용공고", "입사지원"];
       for (let i = 0; i < mainListItems.length; i++) {
         mainListItems[i].getElementsByTagName("a")[0].innerHTML =
           mainNewTitle[i];
@@ -107,7 +108,7 @@
       //footer-nav
       let footerNav = document.getElementsByClassName("footer-nav")[0];
       let listItems = footerNav.getElementsByTagName("li");
-      let newTitles = ["회사개요", "서비스 내용", "오시는길", "문의사항"];
+      let newTitles = ["회사개요", "서비스", "오시는길", "문의사항"];
       for (let i = 0; i < listItems.length; i++) {
         listItems[i].getElementsByTagName("a")[0].innerHTML = newTitles[i];
       }
