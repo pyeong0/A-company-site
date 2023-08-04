@@ -24,19 +24,19 @@ def form():
 
 @app.route('/apply', methods=['POST'])       # URL에 대한 POST 요청을 처리하는 함수를 정의
 def apply():                                 # URL로 POST 요청이 올 때 실행되는 함수
- Name = request.form['Name']                 # HTML 폼으로부터 전송된 데이터를 각 변수에 할당 / Name 변수에는 폼의 'Name' 필드에 입력된 값을 저장
- Hp = request.form['Hp']
- Mail_address = request.form['Mail_address']
- Portfolio_url = request.form['Portfolio_url']
- Residence = request.form['Residence']
- Introduce = request.form['Introduce']
+ name = request.form['name']                 # HTML 폼으로부터 전송된 데이터를 각 변수에 할당 / name 변수에는 폼의 'name' 필드에 입력된 값을 저장
+ phone = request.form['phone']
+ email = request.form['email']
+ portfolio = request.form['portfolio']
+ residence = request.form['residence']
+ introduce = request.form['introduce']
  
  # 데이터베이스에 연결하고 커서 생성
  connection = get_db()
  cursor = connection.cursor()
 
  # DB에 저장
- cursor.execute("INSERT INTO applicant_info (Name, Hp, Mail_address, Portfolio_url, Residence, Introduce) VALUES (%s, %s, %s, %s, %s, %s)", (Name, Hp, Mail_address, Portfolio_url, Residence, Introduce))
+ cursor.execute("INSERT INTO applicant (name, phone, email, portfolio, residence, introduce) VALUES (%s, %s, %s, %s, %s, %s)", (name, phone, email, portfolio, residence, introduce))
 
  # 변경사항 커밋
  connection.commit()
