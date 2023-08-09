@@ -158,6 +158,12 @@ header .wrapper{
 .home-text {
     margin-bottom: 2rem;
 }
+.flex-reverse {
+    flex-direction: row-reverse;
+}
+.home-chart {
+    width: 34vw;
+}
 
 /* footer */
 footer {
@@ -336,6 +342,7 @@ header .wrapper {
     margin-left: 2rem;
     font-family: 'Noto Serif KR', serif;
     font-size: 1.25rem;
+    text-align: center;
 }
 .main-nav a {
     width: auto;
@@ -353,6 +360,11 @@ header .wrapper {
 /* Home */
 .home-hero {
     padding: 16vw 1rem;
+    /* background: url('https://velog.velcdn.com/images/w4t3r/post/a578c89b-98de-4b7a-89dd-eb28474f4fec/image.jpg') no-repeat right top / 70vw auto; */
+    /* padding: 5.5rem 1rem 3rem; */
+    /* padding: 16vw 1rem;; */
+    /* margin: auto; */
+    
 }
 .home-hero h2 {
     font-size: 2.5rem;
